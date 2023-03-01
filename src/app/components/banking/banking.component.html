@@ -1,0 +1,21 @@
+<p>
+  <strong>Hello Testes</strong>
+  <br />
+  Ag: 9999 - Conta: 99999-9
+</p>
+
+<p>
+  Poupança: R$ {{ getPoupanca }}
+  <input type="text" #sacar />
+  <button id="sacar" (click)="sacarValue(sacar.value)">Sacar</button>
+</p>
+
+<p>
+  Carteira: R$ {{ getCarteira }}
+  <input type="text" #depositar />
+  <button id="depositar" (click)="depositarValue(depositar.value)">
+    Depositar
+  </button>
+</p>
+
+<app-list />
